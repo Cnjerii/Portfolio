@@ -38,10 +38,60 @@
                         <P>I am a Security and SOC Tier 1 Analyst knowledgeable and fluent in tools such Burp
                             suite, Andriller, Autopsy, kali Linux, Splunk, kioptrix, maltego and metasploitable. I
                             am proactive and highly interested in systems security, maintenance and management.
-                            I am experienced in python, C++, C, html and CSS styling. I am a team player and goaloriented individual looking to grow within the IT industry.
+                            I am experienced in python, C++, C, html and CSS styling. I am a team player and goaloriented individual looking to grow within the IT industry.
                             </P>
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>system analysis</span><br>ethical hacking</li>
+                                      <li><span>SOC</span></li>
+                                    <li><span>incident response</span></li>
+                                    <li><span>penetration testing</span></li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>july 2023 - present</span><br>cybersecurity instructor at CYBERPRO</li>
+                                    <li><span>may 2022 - june 2023</span><br>security analyst at viewtech limited</li>
+                                    <li><span>november 2021 - february 2022</span><br>IT intern free adverts limited</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>2018-2022</span><br>Bsc information security and forensics</li>
+                                    <li><span>2013-2017</span>KCSE at Mugoiri Girls High School</li>
+                                </ul>
+                            </div>
                     </div>
                 </div>
             </div>
+<!-----------Services--------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="serices-list">
+            
+        </div>
+    </div>
+</div>
+<script>
+                var tablinks = document.getElementsByClassName("tab-links");
+                var tabcontents = document.getElementsByClassName("tab-contents");
+                
+                function opentab(tabname){
+                    for(tablink of tablinks){
+                        tablink.classList.remove("active-link");
+                    }
+                    for(tabcontent of tabcontents){
+                        tabcontent.classList.remove("active-tab");
+                    }
+                    event.currentTarget.classList.add("active-link");
+                    document.getElementById(tabname).classList.add("active-tab");
+                }
+            </script>
     </body>
 </html>
